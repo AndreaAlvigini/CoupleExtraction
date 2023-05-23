@@ -6,16 +6,16 @@ public class CoupleExtraction {
     public static void main(String[] args) {
 
         List<String> people = new ArrayList<String>();
-        people.add("alessandro");
-        people.add("davide");
-        people.add("andrea");
-        people.add("simone");
-        people.add("giorgio");
-        people.add("cristopher");
-        people.add("emanuele");
-        people.add("tiziano");
-        people.add("greta");
-        people.add("gianluca");
+        people.add("Alessandro");
+        people.add("Davide");
+        people.add("Andrea");
+        people.add("Simone");
+        people.add("Giorgio");
+        people.add("Cristopher");
+        people.add("Emanuele");
+        people.add("Tiziano");
+        people.add("Greta");
+        people.add("Gianluca");
 
         System.out.println("Le coppie sono:");
 
