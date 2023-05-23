@@ -15,7 +15,7 @@ public class CoupleExtraction {
         people.add("Emanuele");
         people.add("Tiziano");
         people.add("Greta");
-        people.add("Gianluca");
+        /* people.add("Gianluca"); */
 
         System.out.println("Le coppie sono:");
 
@@ -32,7 +32,7 @@ public class CoupleExtraction {
             System.out.println("Il trio sarà composto da: ");
 
             for (String person : people) {
-                System.out.println(person);
+                System.out.print(person + " ");
             }
         }
 
@@ -51,7 +51,7 @@ public class CoupleExtraction {
         String secondPerson = list.get(secondRandomNum);
         list.remove(secondPerson);
 
-        System.out.println(firstPerson + " e " + secondPerson);
+        System.out.println(firstPerson + " " + secondPerson);
     }
 
 }
