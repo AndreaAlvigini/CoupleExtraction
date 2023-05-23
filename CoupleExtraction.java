@@ -42,7 +42,6 @@ public class CoupleExtraction {
         Random rand = new Random();
 
         int firstRandomNum = rand.nextInt(list.size());
-
         String firstPerson = list.get(firstRandomNum);
         list.remove(firstPerson);
 
