@@ -1,11 +1,11 @@
-import java.util.Scanner;
 import java.util.Random;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CoupleExtraction {
     public static void main(String[] args) {
-        List<String> people = new ArrayList<String>(); //fare lista già pronta
+
+        List<String> people = new ArrayList<String>();
         people.add("alessandro");
         people.add("davide");
         people.add("andrea");
@@ -17,45 +17,41 @@ public class CoupleExtraction {
         people.add("greta");
         people.add("gianluca");
 
-        Random rand = new Random();
-        //int randomNum = rand.nextInt(people.size());
+        System.out.println("Le coppie sono:");
 
         if (people.size() % 2 == 0) {
             while (!people.isEmpty()) {
-                System.out.println("Una coppia è: ");
-                int randomNum1 = rand.nextInt(people.size());
-                String couplePerson1 = people.get(randomNum1);//semplificare utilizzando un solo randomNum1
-                System.out.println(couplePerson1);
-                people.remove(couplePerson1);
-
-                int randomNum2 = rand.nextInt(people.size());
-                String couplePerson2 = people.get(randomNum2);
-                System.out.println(couplePerson2);
-                people.remove(couplePerson2);
-                System.out.println();
+                pickCouples(people);
             }
 
         } else {
             while (people.size() != 3) {
-                System.out.println("Una coppia è: ");
-                int randomNum1 = rand.nextInt(people.size());
-                String couplePerson1 = people.get(randomNum1);
-                System.out.println(couplePerson1);
-                people.remove(couplePerson1);
-
-                int randomNum2 = rand.nextInt(people.size());
-                String couplePerson2 = people.get(randomNum2);
-                System.out.println(couplePerson2);
-                people.remove(couplePerson2);
-                System.out.println();
+                pickCouples(people);
             }
 
-            System.out.println("il trio sarà composto da: ");
+            System.out.println("Il trio sar� composto da: ");
+
             for (String person : people) {
                 System.out.println(person);
             }
         }
 
+    }
+
+    public static void pickCouples(List<String> list) {
+        Random rand = new Random();
+
+        int firstRandomNum = rand.nextInt(list.size());
+
+        String firstPerson = list.get(firstRandomNum);
+        list.remove(firstPerson);
+
+        int secondRandomNum = rand.nextInt(list.size());
+
+        String secondPerson = list.get(secondRandomNum);
+        list.remove(secondPerson);
+
+        System.out.println(firstPerson + " e " + secondPerson);
     }
 
 }
