@@ -2,8 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class CoupleExtraction
-{
+public class CoupleExtraction {
     public static void main(String[] args) {
 
         List<String> people = new ArrayList<String>();
@@ -30,7 +29,7 @@ public class CoupleExtraction
                 pickCouples(people);
             }
 
-            System.out.println("Il trio sarï¿½ composto da: ");
+            System.out.println("Il trio sarà composto da: ");
 
             for (String person : people) {
                 System.out.println(person);
