@@ -1,24 +1,27 @@
-import java.util.Scanner;
-import java.util.Random;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
-public class CoupleExtraction {
+public class CoupleExtraction
+{
     public static void main(String[] args) {
-        List<String> people = new ArrayList<String>(); //fare lista già pronta
-        people.add("alessandro");
-        people.add("davide");
-        people.add("andrea");
-        people.add("simone");
-        people.add("giorgio");
-        people.add("cristopher");
-        people.add("emanuele");
-        people.add("tiziano");
-        people.add("greta");
-        people.add("gianluca");
 
+        //List <String> people = Arrays.asList(new String[] {"alessandro", "davide", "andrea", "simone", "giorgio", "cristopher", "emanuele", "tiziano","greta", "gianluca"});
+        
+        List<String> people = new ArrayList<String>(); //fare lista già pronta
+        people.add("Alessandro");
+        people.add("Davide");
+        people.add("Andrea");
+        people.add("Simone");
+        people.add("Giorgio");
+        people.add("Cristopher");
+        people.add("Emanuele");
+        people.add("Tiziano");
+        people.add("Greta");
+        people.add("Gianluca");
+        
         Random rand = new Random();
-        //int randomNum = rand.nextInt(people.size());
+        int randomNum = rand.nextInt(people.size());
 
         if (people.size() % 2 == 0) {
             while (!people.isEmpty()) {
